@@ -10,12 +10,13 @@ function birthdayCakeCandles(candles) {
   let maxCandle = 0;
   let maxCount = 0;
 
+  //   we first find the max candle
   for (let i = 0; i < candles.length; i++) {
     if (candles[i] > maxCandle) {
       maxCandle = candles[i];
     }
   }
-
+  //   then we count the max candle
   for (let i = 0; i < candles.length; i++) {
     if (candles[i] === maxCandle) {
       maxCount += 1;
