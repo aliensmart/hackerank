@@ -14,8 +14,8 @@ function gradingStudents(grades) {
       roundVals.push(grade);
     } else {
       // find next multiple of 5
-      const roundValue = Math.ceil(grade / 5) * 5;
-      let newVal = roundValue - grade < 3 ? roundValue : grade;
+      const nextValue = Math.ceil(grade / 5) * 5;
+      let newVal = nextValue - grade < 3 ? nextValue : grade;
       roundVals.push(newVal);
     }
   }
